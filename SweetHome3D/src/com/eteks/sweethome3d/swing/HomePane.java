@@ -395,6 +395,8 @@ public class HomePane extends JRootPane implements HomeView {
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.WIDTH);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_DEPTH, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.DEPTH);
+        createAction(ActionType.DISPLAY_HOME_FURNITURE_VOLUME, preferences, 
+        furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.VOLUME);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_HEIGHT, preferences, 
         furnitureController, "toggleFurnitureVisibleProperty", HomePieceOfFurniture.SortableProperty.HEIGHT);
     createAction(ActionType.DISPLAY_HOME_FURNITURE_X, preferences, 
@@ -1324,6 +1326,8 @@ public class HomePane extends JRootPane implements HomeView {
         sortActions, HomePieceOfFurniture.SortableProperty.WIDTH);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_DEPTH, 
         sortActions, HomePieceOfFurniture.SortableProperty.DEPTH);
+     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_VOLUME, 
+        sortActions, HomePieceOfFurniture.SortableProperty.VOLUME);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_HEIGHT, 
         sortActions, HomePieceOfFurniture.SortableProperty.HEIGHT);
     addActionToMap(ActionType.SORT_HOME_FURNITURE_BY_X, 
@@ -1427,6 +1431,8 @@ public class HomePane extends JRootPane implements HomeView {
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.WIDTH);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_DEPTH, 
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.DEPTH);
+        addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_VOLUME, 
+        displayPropertyActions, HomePieceOfFurniture.SortableProperty.VOLUME);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_HEIGHT, 
         displayPropertyActions, HomePieceOfFurniture.SortableProperty.HEIGHT);
     addActionToMap(ActionType.DISPLAY_HOME_FURNITURE_X, 
